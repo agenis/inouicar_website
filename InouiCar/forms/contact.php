@@ -26,6 +26,7 @@
   $contact->from_phoneNumber = $_POST['phoneNumber'];
   $contact->from_drivingLicence = $_POST['drivingLicence'];
   $contact->subject = $_POST['subject'];
+  $contact->to = $_POST['email'];
 
    /*
   $contact->from_locationA = $_POST['locationA'];
@@ -59,9 +60,9 @@
   
   $contact->add_message( $_POST['carModel'], 'Choix');
   $contact->add_message( $_POST['bookingDate'], 'Date de réservation');
-  // $contact->add_message( $_POST['locationA'], 'Succursale de départ');
-  $contact->add_message( $_POST['returnDate'], 'Date de retour du véhicule')
-  // $contact->add_message( $_POST['locationBack'], 'Succursale de retour');;
+  $contact->add_message( $_POST['locationA'], 'Succursale de départ');
+  $contact->add_message( $_POST['returnDate'], 'Date de retour du véhicule');
+  $contact->add_message( $_POST['locationBack'], 'Succursale de retour');
   $contact->add_message( $_POST['returnPeriod'], 'Moment de la journée');
 
   $contact->add_message( $_POST['message'], 'Message', 10);
